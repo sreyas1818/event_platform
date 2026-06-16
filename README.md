@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 # Environment Variables
 
-Create a `.env` file in the project root.
+Create a `.env` file in config file.
 
 ```env
 EMAIL_HOST_USER=your_email@gmail.com
