@@ -284,7 +284,9 @@ Cons:
 A larger project would benefit from custom permission classes.
 
 ---
-
+#  Additional Features
+* email when seeker enrolls into event
+---
 # Security Features
 
 Implemented:
@@ -294,7 +296,6 @@ Implemented:
 * OTP Expiry (5 Minutes)
 * OTP Attempt Limiting
 * Email Verification
-* email when seeker enrolls into event
 
 ---
 
