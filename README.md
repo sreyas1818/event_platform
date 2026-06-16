@@ -48,11 +48,6 @@ Create a `.env` file in the project root.
 EMAIL_HOST_USER=your_email@gmail.com
 EMAIL_HOST_PASSWORD=your_gmail_app_password
 
-DB_NAME=events_db
-DB_USER=postgres
-DB_PASSWORD=your_password
-DB_HOST=localhost
-DB_PORT=5432
 ```
 
 # Database Setup
