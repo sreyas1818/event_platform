@@ -130,13 +130,7 @@ POST   /events/<id>/enroll/
 DELETE /events/<id>/enroll/
 ```
 
-## Dashboard
 
-```http
-GET /events/my-events/
-GET /events/my-upcoming/
-GET /events/my-past/
-```
 
 ---
 
