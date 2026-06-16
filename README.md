@@ -298,15 +298,7 @@ Implemented:
 
 ---
 
-# Future Improvements
 
-* Docker deployment
-* Swagger/OpenAPI documentation
-* Automated test suite
-* Celery for scheduled emails
-* Reminder emails before events
-
----
 
 # Author
 
