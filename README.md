@@ -2,8 +2,6 @@
 
 A backend service built using Django REST Framework for managing events, enrollments, facilitators, and seekers.
 
----
-
 # Tech Stack
 
 * Python 3.10
@@ -13,44 +11,34 @@ A backend service built using Django REST Framework for managing events, enrollm
 * JWT Authentication (SimpleJWT)
 * Gmail SMTP
 
----
-
 # Setup
 
 ## Clone Repository
 
-```bash
 git clone https://github.com/sreyas1818/event_platform
 cd event_platform
-```
 
 ## Create Virtual Environment
 
-```bash
 python -m venv venv
-```
 
 Activate environment:
 
 Windows:
 
-```bash
 venv\Scripts\activate
-```
 
 Mac/Linux:
 
-```bash
 source venv/bin/activate
-```
 
 ## Install Dependencies
 
-```bash
-pip install -r requirements.txt
-```
 
----
+pip install -r requirements.txt
+
+
+
 
 # Environment Variables
 
@@ -67,8 +55,6 @@ DB_HOST=localhost
 DB_PORT=5432
 ```
 
----
-
 # Database Setup
 
 Create a PostgreSQL database:
@@ -81,65 +67,44 @@ Update database configuration if needed.
 
 Run migrations:
 
-```bash
+
 python manage.py makemigrations
 python manage.py migrate
-```
-
----
 
 # Running Locally
 
 Start the Django server:
-
-```bash
 python manage.py runserver
-```
-
 Application will be available at:
 
-```text
 http://127.0.0.1:8000/
-```
 
----
 
 # API Overview
 
 ## Authentication
+POST /auth/signup
+POST /auth/verify-email
+POST /auth/login
+POST /auth/refresh
 
-```http
-POST /auth/signup/
-POST /auth/verify-email/
-POST /auth/login/
-```
 
-## Events
+## Facilitator
 
-```http
-GET    /events/
+GET    /events/my-events/
 POST   /events/
-GET    /events/<id>/
 PUT    /events/<id>/
 DELETE /events/<id>/
-```
 
-## Enrollment
 
-```http
+## seeker
+GET    /events/?page=<Page_Number>
+GET    /events/<id>/
+GET    /events/enrollments/upcoming/
+GET    /events/enrollments/past/
 POST   /events/<id>/enroll/
 DELETE /events/<id>/enroll/
-```
 
-## Dashboard
-
-```http
-GET /events/my-events/
-GET /events/my-upcoming/
-GET /events/my-past/
-```
-
----
 
 # Tests
 
