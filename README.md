@@ -301,7 +301,7 @@ Implemented:
 * OTP Expiry (5 Minutes)
 * OTP Attempt Limiting
 * Email Verification
-* Protected Endpoints
+* email when seeker enrools into event
 
 ---
 
@@ -312,7 +312,6 @@ Implemented:
 * Automated test suite
 * Celery for scheduled emails
 * Reminder emails before events
-* Follow-up emails after enrollment
 
 ---
 
