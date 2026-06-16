@@ -301,7 +301,7 @@ Implemented:
 * OTP Expiry (5 Minutes)
 * OTP Attempt Limiting
 * Email Verification
-* email when seeker enrools into event
+* email when seeker enrolls into event
 
 ---
 
