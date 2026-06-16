@@ -20,7 +20,7 @@ A backend service built using Django REST Framework for managing events, enrollm
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/sreyas1818/event_platform
 cd event_platform
 ```
 
