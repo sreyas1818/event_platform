@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_postman_id": "14c4ea30-239c-4143-9fa5-7536c6fee70d",
+    "name": "seeker",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55923004",
+    "_collection_link": "https://go.postman.co/collection/55923004-14c4ea30-239c-4143-9fa5-7536c6fee70d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "read_events",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgxNTc3MDQ1LCJpYXQiOjE3ODE1NzY3NDUsImp0aSI6ImY2MTc2MzM3ODFmZTQ0NWZiYjQxYjUwN2I2MzhmMGMyIiwidXNlcl9pZCI6IjEifQ.rBCMKYA52lNeZFJLQlpC1J58fC9Yk9viM8Bb-DGQMuU",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/events/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "events",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "event_by_id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgxNTc3MDQ1LCJpYXQiOjE3ODE1NzY3NDUsImp0aSI6ImY2MTc2MzM3ODFmZTQ0NWZiYjQxYjUwN2I2MzhmMGMyIiwidXNlcl9pZCI6IjEifQ.rBCMKYA52lNeZFJLQlpC1J58fC9Yk9viM8Bb-DGQMuU",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/events/3/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "events",
+            "3",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "enrolled_upcoming_events",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "enrolled_past_events",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "cancel_enrollment",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgxNTc5NDc0LCJpYXQiOjE3ODE1NzkxNzQsImp0aSI6IjYwMDllNWQ1YzljZTQ5ZTFhMjY0N2Q3N2Q1ZjQ2MmMyIiwidXNlcl9pZCI6IjEifQ.j0AGlXYSkxcIeyt1V-6l2ddrBEkaefQmpR0Q0XM60Wg",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/events/6/enroll/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "events",
+            "6",
+            "enroll",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "enroll event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgxNTc3MDQ1LCJpYXQiOjE3ODE1NzY3NDUsImp0aSI6ImY2MTc2MzM3ODFmZTQ0NWZiYjQxYjUwN2I2MzhmMGMyIiwidXNlcl9pZCI6IjEifQ.rBCMKYA52lNeZFJLQlpC1J58fC9Yk9viM8Bb-DGQMuU",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/events/1/enroll/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "events",
+            "1",
+            "enroll",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
